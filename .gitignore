@@ -1,0 +1,20 @@
+# XAMPP / Local Server
+db_connect.php
+diagnose.php
+gradle.zip
+gradle_dist/
+
+# Android build
+.gradle/
+build/
+local.properties
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/

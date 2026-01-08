@@ -1,0 +1,44 @@
+package com.example.cmovil
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
+
+@Entity(tableName = "device_data")
+data class DeviceData(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+    
+    @SerializedName("device_id")
+    val deviceId: String,
+    
+    @SerializedName("phone_number")
+    val phoneNumber: String?,
+    
+    @SerializedName("model")
+    val model: String,
+    
+    @SerializedName("brand")
+    val brand: String,
+    
+    @SerializedName("os_version")
+    val osVersion: String,
+    
+    @SerializedName("battery_level")
+    val batteryLevel: Int,
+    
+    @SerializedName("is_charging")
+    val isCharging: Boolean,
+    
+    @SerializedName("latitude")
+    val latitude: Double,
+    
+    @SerializedName("longitude")
+    val longitude: Double,
+    
+    @SerializedName("altitude")
+    val altitude: Double,
+    
+    @SerializedName("timestamp")
+    val timestamp: String
+)
