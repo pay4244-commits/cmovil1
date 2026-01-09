@@ -1,0 +1,11 @@
+package com.example.cmovil.network
+
+import com.example.cmovil.data.DeviceData
+import retrofit2.Response
+import retrofit2.http.Body
+import retrofit2.http.POST
+
+interface ApiService {
+    @POST("api.php")
+    suspend fun sendDeviceData(@Body data: DeviceData): Response<Void>
+}

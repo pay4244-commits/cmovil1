@@ -1,20 +1,22 @@
-# XAMPP / Local Server
-db_connect.php
-diagnose.php
-gradle.zip
-gradle_dist/
-
-# Android build
-.gradle/
-build/
+# Android
+android_project/.gradle/
+android_project/local.properties
+android_project/build/
+android_project/app/build/
+android_project/.idea/
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild
+.cxx
 local.properties
 
-# OS
-Thumbs.db
-Desktop.ini
-.DS_Store
-
-# IDE
-.idea/
-*.iml
+# PHP/Web
+apk/*.apk
+vendor/
+node_modules/
 .vscode/
